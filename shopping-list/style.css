@@ -1,3 +1,89 @@
+html {
+    min-height:100%;
+    background: url('img/background1.jpg') #FFC5B1;
+    background-size:cover;
+    background-blend-mode: soft-light;
+    font-family: 'Dancing Script';
+}
+
+body {
+    
+    margin: 0;
+    height: 100%;
+}
+
+ul {
+    list-style-type: none;
+    padding: 90px 175px 50px 160px; 
+    list-style-position: inside;
+}
+
+li {
+    font-size: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: 8rem;
+    margin: 0 auto;
+    text-align: center;
+    color: #907B73;
+    border-bottom: 5px;
+    border-color: #907B73;
+}
+
+input[type="text"] {
+    font-size: 3.5rem;
+    font-family: 'Arial';
+}
+
+button {
+    font-size: 3.5rem;
+    color: #907B73;
+    width: 70px;
+    border-radius: 10px;
+    border-color: #CEA292;
+    background-color: #FFAB8E;
+}
+
+button:focus {
+    width: 70px;
+    border-radius: 10px;
+}
+
+.enter {
+    width: 70px;
+}
+
+.check {
+    background-color: white;
+    background-image: url('img/check.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 65px;
+    height: 60px;
+    border: 2px;
+    border-radius: 5px;
+    padding: 10px 0px 0px 0px;
+    margin: 5px 0px 0px 0px;
+
+}
+
 .done {
     text-decoration: line-through;
+}
+
+.input {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin: 20px auto 0px auto;
+}
+
+.list {
+    margin: 0 auto;
+    width: 859px;
+    height: 1134px;
+    background-image: url('img/paper.png');
 }

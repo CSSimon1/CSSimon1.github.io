@@ -10,7 +10,7 @@ function inputLength() {
 
 function createListElement() {
     var li = document.createElement("li");
-    li.innerHTML = `<span>${input.value}</span> <button>delete</button>`;
+    li.innerHTML = `<span>${input.value}</span> <button class="check"></button>`;
     ul.appendChild(li);
     input.value="";
     listeners();

@@ -1,19 +1,28 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>JavaScript + DOM</title>
+        <title>Sarah's Grocery List</title>
         <link rel="stylesheet" type="text/css" href="style.css">
-        </head>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lato&display=swap" rel="stylesheet">    
+    </head>
     </head>
     <body>
-        <h1>Shopping List</h1>
-        <p id="first">Get it done today</p>
-        <p class="second">No excuses</p>
-        <input id="user_input" type="text" placeholder="enter items">
-        <button id="enter">enter!</button>
-        <ul>
-            <li><span>parmesan cheese</span> <button>delete</button></li>
-        </ul>
+        <div>
+            <h1>Sarah's Grocery List</h1>
+        </div>
+        <div class="input">
+            <input id="user_input" type="text" maxlength="15" placeholder="enter items">
+            <button id="enter"><strong>+</strong></button>
+        </div>
+        <div class="list">
+            <ul>
+                <!-- <li>
+                <span>parmesan cheese</span> 
+                <button class="check"></button>
+                </li> -->
+            </ul>
+        </div>
     <script type="text/javascript" src="script.js"></script>
     </body>
 </html>
