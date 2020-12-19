@@ -2,7 +2,7 @@ html {
     min-height:100%;
     background: url('img/background1.jpg') #FFC5B1;
     background-size:cover;
-    background-blend-mode: soft-light;
+    background-blend-mode: overlay;
     font-family: 'Dancing Script';
 }
 
@@ -29,7 +29,7 @@ h1 {
     margin: 0 auto;
     text-align: center;
     color: #907B73;
-    border-bottom: 5px;
+    border 0px 0px 5px 0px;
     border-color: #907B73;
 }
 
