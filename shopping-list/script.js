@@ -35,7 +35,11 @@ function addListAfterEnter(event) {
 
 function crossOutItem(i) {
     item[i].firstChild.addEventListener("click", function() {
-        this.classList.add("done");
+        if (this.classList.contains("done")) {
+            this.classList.remove("done");
+        } else {
+            this.classList.add("done");
+        }      
     });
 }
 
