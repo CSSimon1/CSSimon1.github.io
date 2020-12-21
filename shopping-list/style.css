@@ -23,6 +23,7 @@ li {
     font-size: 3rem;
     display: flex;
     justify-content: space-between;
+    color: #907B73;
 }
 
 h1 {
@@ -40,7 +41,6 @@ input[type="text"] {
 }
 
 button {
-    font-size: 3.5rem;
     color: #907B73;
     /* width: 70px; */
     border-radius: 10px;
@@ -54,14 +54,19 @@ button:focus {
     /* border-radius: 10px; */
 }
 
-.enter {
-    /* width: 70px; */
+#enter {
+    background-image: url('img/plus.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 70px;
+    border: 2px;
 }
 
 .check {
     background-color: white;
-    background-image: url('img/check.png');
-    background-size: 100%;
+    background-image: url('img/check.svg');
+    background-size: 80%;
     background-repeat: no-repeat;
     width: 65px;
     height: 60px;
@@ -69,7 +74,6 @@ button:focus {
     border-radius: 5px;
     padding: 10px 0px 0px 0px;
     margin: 5px 0px 0px 0px;
-
 }
 
 .done {
@@ -88,4 +92,10 @@ button:focus {
     width: 859px;
     height: 1134px;
     background-image: url('img/paper.png');
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    margin: 0;
 }

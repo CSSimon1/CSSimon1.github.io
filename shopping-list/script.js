@@ -1,14 +1,19 @@
 var button = document.getElementById("enter");
 var input = document.getElementById("user_input");
 var ul = document.querySelector("ul");
-var item = ul.children
-
+var item = ul.children;
+var listLimit = 15;
 
 function inputLength() {
     return input.value.length;
 }
 
 function createListElement() {
+    if (document.querySelector("ul").children.length === listLimit) {
+        alert("Sarah is not strong enough to carry any more groceries.");
+        return;
+    }
+
     var li = document.createElement("li");
     li.innerHTML = `<span>${input.value}</span> <button class="check"></button>`;
     ul.appendChild(li);
@@ -38,6 +43,7 @@ function deleteItem(i) {
     item[i].lastChild.addEventListener("click", function() {
         this.parentElement.remove();
     });
+
 }
 
 function listeners() {
