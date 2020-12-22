@@ -13,12 +13,12 @@ function createListElement() {
         alert("Sarah is not strong enough to carry any more groceries.");
         return;
     }
-
     var li = document.createElement("li");
     li.innerHTML = `<span>${input.value}</span> <button class="check"></button>`;
     ul.appendChild(li);
+    crossOutItem(li);
+    deleteItem(li);
     input.value="";
-    listeners();
 }
 
 function addListAfterClick() {
@@ -33,34 +33,24 @@ function addListAfterEnter(event) {
     }
 }
 
-function crossOutItem(i) {
-    item[i].firstChild.addEventListener("click", function() {
-        if (this.classList.contains("done")) {
-            this.classList.remove("done");
+function crossOutItem(li) {
+    li.firstChild.addEventListener("click", function() {
+        if (li.firstChild.classList.contains("done")) {
+            li.firstChild.classList.remove("done");
         } else {
-            this.classList.add("done");
+            li.firstChild.classList.add("done");
         }      
     });
 }
 
-function deleteItem(i) {
-    item[i].lastChild.addEventListener("click", function() {
-        this.parentElement.remove();
+function deleteItem(li) {
+    li.lastChild.addEventListener("click", function() {
+        li.firstChild.parentElement.remove();
     });
 
-}
-
-function listeners() {
-    var i = 0;
-    for (i = 0; i < item.length; i++) {     
-        crossOutItem(i);
-        deleteItem(i);
-    };
 }
 
 button.addEventListener("click", addListAfterClick);
 
 input.addEventListener("keypress", addListAfterEnter);
-
-listeners();
 

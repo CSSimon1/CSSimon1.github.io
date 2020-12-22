@@ -89,5 +89,8 @@ button {
 .logo {
     display: flex;
     justify-content: center;
-    margin: 0;
+}
+
+.finalfox {
+    max-width: 10%;
 }
