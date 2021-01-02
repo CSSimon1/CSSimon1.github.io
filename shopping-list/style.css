@@ -50,6 +50,7 @@ input[type="text"] {
 button {
     border: none;
     background-color: #FFC5B1;
+    outline: none;
 }
 
 #enter {
@@ -59,7 +60,6 @@ button {
     margin: 50px 0px 0px 25px;
     width: 70px;
     height: auto;
-    outline: none;
 }
 
 .check {
@@ -95,6 +95,7 @@ button {
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    padding: 0px 0px 20px 0px;
 }
 
 .finalfox {

@@ -1,19 +1,23 @@
-var button = document.getElementById("enter");
-var input = document.getElementById("user_input");
-var ul = document.querySelector("ul");
-var item = ul.children;
-var listLimit = 15;
+const button = document.getElementById("enter");
+const input = document.getElementById("user_input");
+const ul = document.querySelector("ul");
+const item = ul.children;
+const listLimit = 15;
+const listLength = document.querySelector("ul").children.length
 
 function inputLength() {
     return input.value.length;
 }
 
-function createListElement() {
-    if (document.querySelector("ul").children.length === listLimit) {
+function checkLength() {
+    if (listLength === listLimit) {
         alert("Sarah is not strong enough to carry any more groceries.");
         return;
     }
-    var li = document.createElement("li");
+}
+
+function createListElement() {
+    let li = document.createElement("li");
     li.innerHTML = `<span>${input.value}</span> <button class="check"></button>`;
     ul.appendChild(li);
     crossOutItem(li);
