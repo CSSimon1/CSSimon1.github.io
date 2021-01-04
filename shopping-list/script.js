@@ -3,16 +3,18 @@ const input = document.getElementById("user_input");
 const ul = document.querySelector("ul");
 const item = ul.children;
 const listLimit = 15;
-const listLength = document.querySelector("ul").children.length
 
 function inputLength() {
     return input.value.length;
 }
 
 function checkLength() {
-    if (listLength === listLimit) {
+    console.log(item.length)
+    if (item.length === listLimit) {
         alert("Sarah is not strong enough to carry any more groceries.");
-        return;
+        return false;
+    } else {
+        return true;
     }
 }
 
@@ -26,13 +28,13 @@ function createListElement() {
 }
 
 function addListAfterClick() {
-    if (inputLength() > 0) {
+    if (inputLength() > 0 && checkLength() === true) {
         createListElement();
     }
 }
 
 function addListAfterEnter(event) {
-    if (inputLength() > 0 && event.key === "Enter") {
+    if (inputLength() > 0 && event.key === "Enter" && checkLength() === true) {
         createListElement();
     }
 }

@@ -1,14 +1,9 @@
 html {
     background-color: #FFC5B1;
-    /* min-height:100%;
-    background: url('img/background1.jpg') #FFC5B1;
-    background-size:cover;
-    background-blend-mode: overlay; */
     font-family: 'Dancing Script';
 }
 
 body {
-    
     margin: 0;
     height: 100%;
 }
@@ -45,6 +40,7 @@ input[type="text"] {
     border: none;
     border-radius: 20px;
     outline: none;
+    box-shadow: 2px 2px 1px #907B73; 
 }
 
 button {
